@@ -235,6 +235,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统操作命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jackxb的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/26/linux系统操作命令/" itemprop="url">linux系统操作命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
+                2018-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>###linux系统操作命令</p>
+<p>由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。</p>
+<p>clear : 清屏</p>
+<p>ps: 查看shell版本</p>
+<p>adduser:创建用户名</p>
+<p>passwd + 用户名:设置密码</p>
+<p>userdel   -rf   用户名:删除用户</p>
+<p>shutdown, init 0: 关机     shutdown -c:取消关机</p>
+<p>查看帮助命令: man   info   –help   what is</p>
+<p>pwd:  查看当前工作路径</p>
+<p>mkdir:  创建文件夹</p>
+<p>touch:  创建文件</p>
+<p>rmdir:删除空文件夹</p>
+<p>rm:删除文件</p>
+<p>rm  -r:递归删除</p>
+<p>rm  -i:交互式删除</p>
+<p>rm  -f:强行删除</p>
+<p>rm  -rf :  删除非空的目录</p>
+<p>ls  -l :查看文件的长格式信息</p>
+<p>ls  -a:查看隐藏文件</p>
+<p>mv: 剪切（移动，改名）</p>
+<p>cat:查看文件内容</p>
+<p>wget+链接地址:进入网站</p>
+<p>cat+文件名|more(less):分屏查看</p>
+<p><code>grep &#39;&lt;div .*&gt;&#39; / -R  -n  &gt;  result.txt  2&gt;  error.txt</code>   输出重定向   错误重定向</p>
+<p>ln -n  硬链接</p>
+<p>ln  -s  软连接</p>
+<p>解压:gunzip   压缩:gzip   (后缀为gz)</p>
+<p>解压:xz  -d   压缩:  xz   -z   -9(后缀为xz)</p>
+<p>解归档: tar  -xvf (-tf,-xf)</p>
+<p>归档:tar  -cvf</p>
+<p>chmod：改变文件执行模式</p>
+<p>安装软件的方式:  yum   rpm    make&amp;make install  </p>
+<p>远程连接服务器的两种方式:  sftp   ssh</p>
+<p>ps  -ef  |grep ：查看进程状态</p>
+<p>kill + 进程号：停止进程</p>
+<p>netstat  -na  :查看端口号</p>
+<p>配置防火墙端口  </p>
+<pre><code>添加 firewall-cmd --zone=public --add-port=80/tcp --permanent （--permanent永久生效，没有此参数重启后失效） 
+重新载入 firewall-cmd --reload
+查看 firewall-cmd --zone=public --query-port=80/tcp
+删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
+</code></pre><p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
+<p>​    </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL数据库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -625,169 +788,6 @@
 <li>隐藏域(在表单里)</li>
 <li>URL重写(URL里加额外信息向服务器提供身份标识，字节最多为2048)</li>
 </ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统操作命令/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jackxb的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/26/linux系统操作命令/" itemprop="url">Untitled</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T16:27:03+08:00">
-                2018-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>###linux系统操作命令</p>
-<p>由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。</p>
-<p>clear : 清屏</p>
-<p>ps: 查看shell版本</p>
-<p>adduser:创建用户名</p>
-<p>passwd + 用户名:设置密码</p>
-<p>userdel   -rf   用户名:删除用户</p>
-<p>shutdown, init 0: 关机     shutdown -c:取消关机</p>
-<p>查看帮助命令: man   info   –help   what is</p>
-<p>pwd:  查看当前工作路径</p>
-<p>mkdir:  创建文件夹</p>
-<p>touch:  创建文件</p>
-<p>rmdir:删除空文件夹</p>
-<p>rm:删除文件</p>
-<p>rm  -r:递归删除</p>
-<p>rm  -i:交互式删除</p>
-<p>rm  -f:强行删除</p>
-<p>rm  -rf :  删除非空的目录</p>
-<p>ls  -l :查看文件的长格式信息</p>
-<p>ls  -a:查看隐藏文件</p>
-<p>mv: 剪切（移动，改名）</p>
-<p>cat:查看文件内容</p>
-<p>wget+链接地址:进入网站</p>
-<p>cat+文件名|more(less):分屏查看</p>
-<p><code>grep &#39;&lt;div .*&gt;&#39; / -R  -n  &gt;  result.txt  2&gt;  error.txt</code>   输出重定向   错误重定向</p>
-<p>ln -n  硬链接</p>
-<p>ln  -s  软连接</p>
-<p>解压:gunzip   压缩:gzip   (后缀为gz)</p>
-<p>解压:xz  -d   压缩:  xz   -z   -9(后缀为xz)</p>
-<p>解归档: tar  -xvf (-tf,-xf)</p>
-<p>归档:tar  -cvf</p>
-<p>chmod：改变文件执行模式</p>
-<p>安装软件的方式:  yum   rpm    make&amp;make install  </p>
-<p>远程连接服务器的两种方式:  sftp   ssh</p>
-<p>ps  -ef  |grep ：查看进程状态</p>
-<p>kill + 进程号：停止进程</p>
-<p>netstat  -na  :查看端口号</p>
-<p>配置防火墙端口  </p>
-<pre><code>添加 firewall-cmd --zone=public --add-port=80/tcp --permanent （--permanent永久生效，没有此参数重启后失效） 
-重新载入 firewall-cmd --reload
-查看 firewall-cmd --zone=public --query-port=80/tcp
-删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
-</code></pre><p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
-<p>​    </p>
 
           
         
