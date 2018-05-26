@@ -235,6 +235,157 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL数据库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jackxb的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/26/MySQL数据库/" itemprop="url">MySQL数据库</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
+                2018-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><p>为什么要使用数据库？<br>数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）<br>数据库能高效的存储和管理数据方便的检索数</p>
+<p>为什么使用关系型数据库？<br>理论基础–集合论和关系代数<br>用二维表组织数据：<br>表–实体<br>行–记录<br>列–字段<br>表与表之间有关系<br>编程语言–SQL(结构化查询语言)</p>
+<p>数据库、数据库系统、数据库管理系统？<br>Database–DB–数据的仓库（集散地）<br>DBS–包括了DB、DBMS、DBA(数据库管理员)<br>(R)DBMS–(关系型)数据库管理系统–管理数据库的软件<br>  —MySQL–小巧但是强大<br>  —Oracle–安全强大 商业智能  昂贵 （用于金融、电商）<br>  —DB2–安全强大  商业智能 昂贵  （用于金融、银行等）<br>  —SQL Server  不受欢迎<br>  —SQLite–嵌入式数据库（用于移动端）</p>
+<p>数据库客户端工具:<br>  –SQLyog<br>  –Toad for MySQL<br>  –Navicat for MySQL</p>
+<p>– SQL(Structured Query Language)<br>– 关系型数据库的编程语言<br>– DDL(数据定义语言):create /drop/alter<br>– DML(数据操纵语言):insert/delete/update<br>– DQL(数据查询语言):select<br>– DCL(数据控制语言):grant/revoke/begin/commit/rollback</p>
+<p>Cannot connect …(未连接上)原因:</p>
+<ul>
+<li>host 写错</li>
+<li>port 写错</li>
+<li>服务器没有启动</li>
+</ul>
+<p>Unknown database …</p>
+<ul>
+<li>db / database</li>
+</ul>
+<p>Access denied</p>
+<ul>
+<li>user</li>
+<li>passwd / password</li>
+<li>账号不允许远程连接<br>MySQL</li>
+</ul>
+<p>关系型数据库–关系模型<br>pyhon程序–对象模型<br>ORM–对象关系映射</p>
+<p>非关系型数据库redis<br>哨兵配置文件：<br>   bind 内网地址<br>   port 26379<br>   sentinel monitor mymaster 公网地址 主人的端口  有多少个哨兵认为master失效的投票数<br>   sentinel down-after-milliseconds mymaster 5000<br>   sentinel auth-pass mymaster 1qaz2wsx</p>
+<p>执行事务</p>
+<p>事务机制可以确保数据一致性。</p>
+<p>事务应该具有4个属性：原子性、一致性、隔离性、持久性。这四个属性通常称为ACID特性。</p>
+<ul>
+<li>原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。</li>
+<li>一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。</li>
+<li>隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。</li>
+<li>持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统操作命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -350,157 +501,6 @@
 删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
 </code></pre><p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
 <p>​    </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL数据库/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jackxb的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/26/MySQL数据库/" itemprop="url">MySQL数据库</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
-                2018-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><p>为什么要使用数据库？<br>数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）<br>数据库能高效的存储和管理数据方便的检索数</p>
-<p>为什么使用关系型数据库？<br>理论基础–集合论和关系代数<br>用二维表组织数据：<br>表–实体<br>行–记录<br>列–字段<br>表与表之间有关系<br>编程语言–SQL(结构化查询语言)</p>
-<p>数据库、数据库系统、数据库管理系统？<br>Database–DB–数据的仓库（集散地）<br>DBS–包括了DB、DBMS、DBA(数据库管理员)<br>(R)DBMS–(关系型)数据库管理系统–管理数据库的软件<br>  —MySQL–小巧但是强大<br>  —Oracle–安全强大 商业智能  昂贵 （用于金融、电商）<br>  —DB2–安全强大  商业智能 昂贵  （用于金融、银行等）<br>  —SQL Server  不受欢迎<br>  —SQLite–嵌入式数据库（用于移动端）</p>
-<p>数据库客户端工具:<br>  –SQLyog<br>  –Toad for MySQL<br>  –Navicat for MySQL</p>
-<p>– SQL(Structured Query Language)<br>– 关系型数据库的编程语言<br>– DDL(数据定义语言):create /drop/alter<br>– DML(数据操纵语言):insert/delete/update<br>– DQL(数据查询语言):select<br>– DCL(数据控制语言):grant/revoke/begin/commit/rollback</p>
-<p>Cannot connect …(未连接上)原因:</p>
-<ul>
-<li>host 写错</li>
-<li>port 写错</li>
-<li>服务器没有启动</li>
-</ul>
-<p>Unknown database …</p>
-<ul>
-<li>db / database</li>
-</ul>
-<p>Access denied</p>
-<ul>
-<li>user</li>
-<li>passwd / password</li>
-<li>账号不允许远程连接<br>MySQL</li>
-</ul>
-<p>关系型数据库–关系模型<br>pyhon程序–对象模型<br>ORM–对象关系映射</p>
-<p>非关系型数据库redis<br>哨兵配置文件：<br>   bind 内网地址<br>   port 26379<br>   sentinel monitor mymaster 公网地址 主人的端口  有多少个哨兵认为master失效的投票数<br>   sentinel down-after-milliseconds mymaster 5000<br>   sentinel auth-pass mymaster 1qaz2wsx</p>
-<p>执行事务</p>
-<p>事务机制可以确保数据一致性。</p>
-<p>事务应该具有4个属性：原子性、一致性、隔离性、持久性。这四个属性通常称为ACID特性。</p>
-<ul>
-<li>原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。</li>
-<li>一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。</li>
-<li>隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。</li>
-<li>持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。</li>
-</ul>
 
           
         
