@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="###linux系统操作命令 由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。 clear : 清屏 ps: 查看shell版本 adduser:创建用户名 passwd + 用户名:设置密码 userdel   -rf   用户名:删除用户 shutdown, init 0: 关机     shutdown -c:取消关机 查看帮助命令: man   info   –">
-<meta name="keywords" content="熊彪">
+<meta name="description" content="MySQL数据库为什么要使用数据库？数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）数据库能高效的存储和管理数据方便的检索数 为什么使用关系型数据库？理论基础–集合论和关系代数用二维表组织数据：表–实体行–记录列–字段表与表之间有关系编程语言–SQL(结构化查询语言) 数据库、数据库系统、数据库管理系统？Database–DB–数据的仓库（集散地）DBS–包括了DB">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux系统操作命令">
-<meta property="og:url" content="http://yoursite.com/2018/05/26/linux系统操作命令/index.html">
+<meta property="og:title" content="MySQL">
+<meta property="og:url" content="http://yoursite.com/2018/05/26/MySQL/index.html">
 <meta property="og:site_name" content="jackxb的个人博客">
-<meta property="og:description" content="###linux系统操作命令 由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。 clear : 清屏 ps: 查看shell版本 adduser:创建用户名 passwd + 用户名:设置密码 userdel   -rf   用户名:删除用户 shutdown, init 0: 关机     shutdown -c:取消关机 查看帮助命令: man   info   –">
+<meta property="og:description" content="MySQL数据库为什么要使用数据库？数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）数据库能高效的存储和管理数据方便的检索数 为什么使用关系型数据库？理论基础–集合论和关系代数用二维表组织数据：表–实体行–记录列–字段表与表之间有关系编程语言–SQL(结构化查询语言) 数据库、数据库系统、数据库管理系统？Database–DB–数据的仓库（集散地）DBS–包括了DB">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-26T09:39:48.134Z">
+<meta property="og:updated_time" content="2018-05-26T10:14:11.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux系统操作命令">
-<meta name="twitter:description" content="###linux系统操作命令 由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。 clear : 清屏 ps: 查看shell版本 adduser:创建用户名 passwd + 用户名:设置密码 userdel   -rf   用户名:删除用户 shutdown, init 0: 关机     shutdown -c:取消关机 查看帮助命令: man   info   –">
+<meta name="twitter:title" content="MySQL">
+<meta name="twitter:description" content="MySQL数据库为什么要使用数据库？数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）数据库能高效的存储和管理数据方便的检索数 为什么使用关系型数据库？理论基础–集合论和关系代数用二维表组织数据：表–实体行–记录列–字段表与表之间有关系编程语言–SQL(结构化查询语言) 数据库、数据库系统、数据库管理系统？Database–DB–数据的仓库（集散地）DBS–包括了DB">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/26/linux系统操作命令/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/26/MySQL/"/>
 
 
 
 
 
-  <title>linux系统操作命令 | jackxb的个人博客</title>
+  <title>MySQL | jackxb的个人博客</title>
   
 
 
@@ -235,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统操作命令/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -252,7 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">linux系统操作命令</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL</h1>
         
 
         <div class="post-meta">
@@ -264,7 +264,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T18:13:50+08:00">
                 2018-05-26
               </time>
             
@@ -302,50 +302,38 @@
       
 
       
-        <p>###linux系统操作命令</p>
-<p>由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。</p>
-<p>clear : 清屏</p>
-<p>ps: 查看shell版本</p>
-<p>adduser:创建用户名</p>
-<p>passwd + 用户名:设置密码</p>
-<p>userdel   -rf   用户名:删除用户</p>
-<p>shutdown, init 0: 关机     shutdown -c:取消关机</p>
-<p>查看帮助命令: man   info   –help   what is</p>
-<p>pwd:  查看当前工作路径</p>
-<p>mkdir:  创建文件夹</p>
-<p>touch:  创建文件</p>
-<p>rmdir:删除空文件夹</p>
-<p>rm:删除文件</p>
-<p>rm  -r:递归删除</p>
-<p>rm  -i:交互式删除</p>
-<p>rm  -f:强行删除</p>
-<p>rm  -rf :  删除非空的目录</p>
-<p>ls  -l :查看文件的长格式信息</p>
-<p>ls  -a:查看隐藏文件</p>
-<p>mv: 剪切（移动，改名）</p>
-<p>cat:查看文件内容</p>
-<p>wget+链接地址:进入网站</p>
-<p>cat+文件名|more(less):分屏查看</p>
-<p><code>grep &#39;&lt;div .*&gt;&#39; / -R  -n  &gt;  result.txt  2&gt;  error.txt</code>   输出重定向   错误重定向</p>
-<p>ln -n  硬链接</p>
-<p>ln  -s  软连接</p>
-<p>解压:gunzip   压缩:gzip   (后缀为gz)</p>
-<p>解压:xz  -d   压缩:  xz   -z   -9(后缀为xz)</p>
-<p>解归档: tar  -xvf (-tf,-xf)</p>
-<p>归档:tar  -cvf</p>
-<p>chmod：改变文件执行模式</p>
-<p>安装软件的方式:  yum   rpm    make&amp;make install  </p>
-<p>远程连接服务器的两种方式:  sftp   ssh</p>
-<p>ps  -ef  |grep ：查看进程状态</p>
-<p>kill + 进程号：停止进程</p>
-<p>netstat  -na  :查看端口号</p>
-<p>配置防火墙端口  </p>
-<pre><code>添加 firewall-cmd --zone=public --add-port=80/tcp --permanent （--permanent永久生效，没有此参数重启后失效） 
-重新载入 firewall-cmd --reload
-查看 firewall-cmd --zone=public --query-port=80/tcp
-删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
-</code></pre><p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
-<p>​    </p>
+        <h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><p>为什么要使用数据库？<br>数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）<br>数据库能高效的存储和管理数据方便的检索数</p>
+<p>为什么使用关系型数据库？<br>理论基础–集合论和关系代数<br>用二维表组织数据：<br>表–实体<br>行–记录<br>列–字段<br>表与表之间有关系<br>编程语言–SQL(结构化查询语言)</p>
+<p>数据库、数据库系统、数据库管理系统？<br>Database–DB–数据的仓库（集散地）<br>DBS–包括了DB、DBMS、DBA(数据库管理员)<br>(R)DBMS–(关系型)数据库管理系统–管理数据库的软件<br>—MySQL–小巧但是强大<br>—Oracle–安全强大 商业智能 昂贵 （用于金融、电商）<br>—DB2–安全强大 商业智能 昂贵 （用于金融、银行等）<br>—SQL Server 不受欢迎<br>—SQLite–嵌入式数据库（用于移动端）</p>
+<p>数据库客户端工具:<br>–SQLyog<br>–Toad for MySQL<br>–Navicat for MySQL</p>
+<p>– SQL(Structured Query Language)<br>– 关系型数据库的编程语言<br>– DDL(数据定义语言):create /drop/alter<br>– DML(数据操纵语言):insert/delete/update<br>– DQL(数据查询语言):select<br>– DCL(数据控制语言):grant/revoke/begin/commit/rollback</p>
+<p>Cannot connect …(未连接上)原因:</p>
+<ul>
+<li>host 写错</li>
+<li>port 写错</li>
+<li>服务器没有启动</li>
+</ul>
+<p>Unknown database …</p>
+<ul>
+<li>db / database</li>
+</ul>
+<p>Access denied</p>
+<ul>
+<li>user</li>
+<li>passwd / password</li>
+<li>账号不允许远程连接<br>MySQL</li>
+</ul>
+<p>关系型数据库–关系模型<br>pyhon程序–对象模型<br>ORM–对象关系映射</p>
+<p>非关系型数据库redis<br>哨兵配置文件：<br>bind 内网地址<br>port 26379<br>sentinel monitor mymaster 公网地址 主人的端口 有多少个哨兵认为master失效的投票数<br>sentinel down-after-milliseconds mymaster 5000<br>sentinel auth-pass mymaster 1qaz2wsx</p>
+<p>执行事务</p>
+<p>事务机制可以确保数据一致性。</p>
+<p>事务应该具有4个属性：原子性、一致性、隔离性、持久性。这四个属性通常称为ACID特性。</p>
+<ul>
+<li>原子性（atomicity）。一个事务是一个不可分割的工作单位，事务中包括的诸操作要么都做，要么都不做。</li>
+<li>一致性（consistency）。事务必须是使数据库从一个一致性状态变到另一个一致性状态。一致性与原子性是密切相关的。</li>
+<li>隔离性（isolation）。一个事务的执行不能被其他事务干扰。即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。</li>
+<li>持久性（durability）。持续性也称永久性（permanence），指一个事务一旦提交，它对数据库中数据的改变就应该是永久性的。接下来的其他操作或故障不应该对其有任何影响。</li>
+</ul>
 
       
     </div>
@@ -361,6 +349,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+        </div>
+      
 
       
       
@@ -370,8 +364,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/26/mk/" rel="next" title="mk">
-                <i class="fa fa-chevron-left"></i> mk
+              <a href="/2018/05/26/linux系统/" rel="next" title="linux系统">
+                <i class="fa fa-chevron-left"></i> linux系统
               </a>
             
           </div>
@@ -380,8 +374,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/26/MySQL数据库/" rel="prev" title="MySQL数据库">
-                MySQL数据库 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/26/Django/" rel="prev" title="Django">
+                Django <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -434,8 +428,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -450,7 +453,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -463,7 +466,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -493,6 +496,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL数据库"><span class="nav-number">1.</span> <span class="nav-text">MySQL数据库</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

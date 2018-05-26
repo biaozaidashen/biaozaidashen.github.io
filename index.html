@@ -235,7 +235,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL数据库/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/Django/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -254,7 +254,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/26/MySQL数据库/" itemprop="url">MySQL数据库</a></h1>
+                <a class="post-title-link" href="/2018/05/26/Django/" itemprop="url">Django</a></h1>
         
 
         <div class="post-meta">
@@ -266,7 +266,172 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T18:15:50+08:00">
+                2018-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h3><h5 id="1-windows命令下安装django服务器"><a href="#1-windows命令下安装django服务器" class="headerlink" title="1.windows命令下安装django服务器"></a>1.windows命令下安装django服务器</h5><p>检查python版本要与django版本匹配</p>
+<p> python –version</p>
+<p>建立虚拟环境</p>
+<p> python -m venv 虚拟文件名</p>
+<p>进入虚拟环境的scripts脚步激活虚拟环境</p>
+<p> activate</p>
+<p>退出激活</p>
+<p> deactivate</p>
+<p>在虚拟环境下安装django</p>
+<p> pip install django==版本号</p>
+<p>查看django版本</p>
+<p> django-admin –version</p>
+<p>在虚拟环境下建立django项目</p>
+<p> django-admin startproject 项目名</p>
+<p>进入django项目</p>
+<p> cd 项目名</p>
+<p>启动django服务器</p>
+<p> python manage.py runserver</p>
+<p>建立应用文件</p>
+<p> python manage.py startapp 应用文件名</p>
+<h5 id="2-在linux系统下安装"><a href="#2-在linux系统下安装" class="headerlink" title="2.在linux系统下安装"></a>2.在linux系统下安装</h5><p><code>mkdir hello_django</code></p>
+<p><code>cd hello_django</code></p>
+<p>建立虚拟环境venv</p>
+<p><code>python3 -m venv venv</code></p>
+<p>激活虚拟环境</p>
+<p><code>source venv/bin/activate</code></p>
+<p>更新pip</p>
+<p><code>python -m pip install --upgrade pip</code></p>
+<p>安装django</p>
+<p>pip install django</p>
+<p>创建django项目名hello_django</p>
+<p><code>django-admin startproject hello_django .</code></p>
+<h5 id="3-MVT关系模型"><a href="#3-MVT关系模型" class="headerlink" title="3.MVT关系模型"></a>3.MVT关系模型</h5><p>各个模块的交互关系<br>Django收到HTTP请求后，依次完成下列处理：</p>
+<p>根据URL通过URLConf模块映射到View函数，将HttpRequest对象作为参数传入。<br>在View函数中，获取HTTP请求的参数，通过Model访问数据库，进行业务逻辑运算得到输出数据。<br>然后，加载Template，根据输出数据生成页面，将HttpResponse对象返回。</p>
+<p>生成迁移</p>
+<p><code>python manage.py makemigrations 应用名</code></p>
+<p>执行迁移</p>
+<p><code>python manage.py migrate</code></p>
+<p>创建超级管理员账号</p>
+<p><code>python manage.py createsuperuser</code></p>
+<p>用户跟踪的三种方式:</p>
+<ul>
+<li>cookie(在请求头里)</li>
+<li>隐藏域(在表单里)</li>
+<li>URL重写(URL里加额外信息向服务器提供身份标识，字节最多为2048)</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/MySQL/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jackxb的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/26/MySQL/" itemprop="url">MySQL</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T18:13:50+08:00">
                 2018-05-26
               </time>
             
@@ -308,8 +473,8 @@
           
             <h3 id="MySQL数据库"><a href="#MySQL数据库" class="headerlink" title="MySQL数据库"></a>MySQL数据库</h3><p>为什么要使用数据库？<br>数据持久化–将数据从一掉电数据就丢失的存储介质（内存）转移到持久存储介质（硬盘）<br>数据库能高效的存储和管理数据方便的检索数</p>
 <p>为什么使用关系型数据库？<br>理论基础–集合论和关系代数<br>用二维表组织数据：<br>表–实体<br>行–记录<br>列–字段<br>表与表之间有关系<br>编程语言–SQL(结构化查询语言)</p>
-<p>数据库、数据库系统、数据库管理系统？<br>Database–DB–数据的仓库（集散地）<br>DBS–包括了DB、DBMS、DBA(数据库管理员)<br>(R)DBMS–(关系型)数据库管理系统–管理数据库的软件<br>  —MySQL–小巧但是强大<br>  —Oracle–安全强大 商业智能  昂贵 （用于金融、电商）<br>  —DB2–安全强大  商业智能 昂贵  （用于金融、银行等）<br>  —SQL Server  不受欢迎<br>  —SQLite–嵌入式数据库（用于移动端）</p>
-<p>数据库客户端工具:<br>  –SQLyog<br>  –Toad for MySQL<br>  –Navicat for MySQL</p>
+<p>数据库、数据库系统、数据库管理系统？<br>Database–DB–数据的仓库（集散地）<br>DBS–包括了DB、DBMS、DBA(数据库管理员)<br>(R)DBMS–(关系型)数据库管理系统–管理数据库的软件<br>—MySQL–小巧但是强大<br>—Oracle–安全强大 商业智能 昂贵 （用于金融、电商）<br>—DB2–安全强大 商业智能 昂贵 （用于金融、银行等）<br>—SQL Server 不受欢迎<br>—SQLite–嵌入式数据库（用于移动端）</p>
+<p>数据库客户端工具:<br>–SQLyog<br>–Toad for MySQL<br>–Navicat for MySQL</p>
 <p>– SQL(Structured Query Language)<br>– 关系型数据库的编程语言<br>– DDL(数据定义语言):create /drop/alter<br>– DML(数据操纵语言):insert/delete/update<br>– DQL(数据查询语言):select<br>– DCL(数据控制语言):grant/revoke/begin/commit/rollback</p>
 <p>Cannot connect …(未连接上)原因:</p>
 <ul>
@@ -328,7 +493,7 @@
 <li>账号不允许远程连接<br>MySQL</li>
 </ul>
 <p>关系型数据库–关系模型<br>pyhon程序–对象模型<br>ORM–对象关系映射</p>
-<p>非关系型数据库redis<br>哨兵配置文件：<br>   bind 内网地址<br>   port 26379<br>   sentinel monitor mymaster 公网地址 主人的端口  有多少个哨兵认为master失效的投票数<br>   sentinel down-after-milliseconds mymaster 5000<br>   sentinel auth-pass mymaster 1qaz2wsx</p>
+<p>非关系型数据库redis<br>哨兵配置文件：<br>bind 内网地址<br>port 26379<br>sentinel monitor mymaster 公网地址 主人的端口 有多少个哨兵认为master失效的投票数<br>sentinel down-after-milliseconds mymaster 5000<br>sentinel auth-pass mymaster 1qaz2wsx</p>
 <p>执行事务</p>
 <p>事务机制可以确保数据一致性。</p>
 <p>事务应该具有4个属性：原子性、一致性、隔离性、持久性。这四个属性通常称为ACID特性。</p>
@@ -386,7 +551,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统操作命令/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/linux系统/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -405,7 +570,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/26/linux系统操作命令/" itemprop="url">linux系统操作命令</a></h1>
+                <a class="post-title-link" href="/2018/05/26/linux系统/" itemprop="url">linux系统</a></h1>
         
 
         <div class="post-meta">
@@ -417,7 +582,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T18:08:00+08:00">
                 2018-05-26
               </time>
             
@@ -457,337 +622,45 @@
       
         
           
-            <p>###linux系统操作命令</p>
-<p>由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。</p>
+            <h3 id="linux系统操作命令"><a href="#linux系统操作命令" class="headerlink" title="linux系统操作命令"></a>linux系统操作命令</h3><p>由于该系统命令较多，我就不一一阐述了，在这里我只对一些常用的做一下简单介绍。</p>
 <p>clear : 清屏</p>
 <p>ps: 查看shell版本</p>
 <p>adduser:创建用户名</p>
 <p>passwd + 用户名:设置密码</p>
-<p>userdel   -rf   用户名:删除用户</p>
-<p>shutdown, init 0: 关机     shutdown -c:取消关机</p>
-<p>查看帮助命令: man   info   –help   what is</p>
-<p>pwd:  查看当前工作路径</p>
-<p>mkdir:  创建文件夹</p>
-<p>touch:  创建文件</p>
+<p>userdel -rf 用户名:删除用户</p>
+<p>shutdown, init 0: 关机 shutdown -c:取消关机</p>
+<p>查看帮助命令: man info –help what is</p>
+<p>pwd: 查看当前工作路径</p>
+<p>mkdir: 创建文件夹</p>
+<p>touch: 创建文件</p>
 <p>rmdir:删除空文件夹</p>
 <p>rm:删除文件</p>
-<p>rm  -r:递归删除</p>
-<p>rm  -i:交互式删除</p>
-<p>rm  -f:强行删除</p>
-<p>rm  -rf :  删除非空的目录</p>
-<p>ls  -l :查看文件的长格式信息</p>
-<p>ls  -a:查看隐藏文件</p>
+<p>rm -r:递归删除</p>
+<p>rm -i:交互式删除</p>
+<p>rm -f:强行删除</p>
+<p>rm -rf : 删除非空的目录</p>
+<p>ls -l :查看文件的长格式信息</p>
+<p>ls -a:查看隐藏文件</p>
 <p>mv: 剪切（移动，改名）</p>
 <p>cat:查看文件内容</p>
 <p>wget+链接地址:进入网站</p>
 <p>cat+文件名|more(less):分屏查看</p>
-<p><code>grep &#39;&lt;div .*&gt;&#39; / -R  -n  &gt;  result.txt  2&gt;  error.txt</code>   输出重定向   错误重定向</p>
-<p>ln -n  硬链接</p>
-<p>ln  -s  软连接</p>
-<p>解压:gunzip   压缩:gzip   (后缀为gz)</p>
-<p>解压:xz  -d   压缩:  xz   -z   -9(后缀为xz)</p>
-<p>解归档: tar  -xvf (-tf,-xf)</p>
-<p>归档:tar  -cvf</p>
+<p><code>grep &#39;&lt;div .*&gt;&#39; / -R -n &gt; result.txt 2&gt; error.txt</code> 输出重定向 错误重定向</p>
+<p>ln -n 硬链接</p>
+<p>ln -s 软连接</p>
+<p>解压:gunzip 压缩:gzip (后缀为gz)</p>
+<p>解压:xz -d 压缩: xz -z -9(后缀为xz)</p>
+<p>解归档: tar -xvf (-tf,-xf)</p>
+<p>归档:tar -cvf</p>
 <p>chmod：改变文件执行模式</p>
-<p>安装软件的方式:  yum   rpm    make&amp;make install  </p>
-<p>远程连接服务器的两种方式:  sftp   ssh</p>
-<p>ps  -ef  |grep ：查看进程状态</p>
+<p>安装软件的方式: yum rpm make&amp;make install</p>
+<p>远程连接服务器的两种方式: sftp ssh</p>
+<p>ps -ef |grep ：查看进程状态</p>
 <p>kill + 进程号：停止进程</p>
-<p>netstat  -na  :查看端口号</p>
-<p>配置防火墙端口  </p>
-<pre><code>添加 firewall-cmd --zone=public --add-port=80/tcp --permanent （--permanent永久生效，没有此参数重启后失效） 
-重新载入 firewall-cmd --reload
-查看 firewall-cmd --zone=public --query-port=80/tcp
-删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent
-</code></pre><p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
-<p>​    </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/mk/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jackxb的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/26/mk/" itemprop="url">mk</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:28:24+08:00">
-                2018-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/26/Django/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jackxb的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/26/Django/" itemprop="url">Untitled</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T17:24:56+08:00">
-                2018-05-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>##Django</p>
-<p>###1.windows命令下安装django服务器</p>
-<p>检查python版本要与django版本匹配</p>
-<p>​    python  –version</p>
-<p>建立虚拟环境</p>
-<p>​    python   -m   venv  虚拟文件名</p>
-<p>进入虚拟环境的scripts脚步激活虚拟环境</p>
-<p>​    activate</p>
-<p>退出激活</p>
-<p>​    deactivate</p>
-<p>在虚拟环境下安装django</p>
-<p>​    pip  install  django==版本号</p>
-<p>查看django版本</p>
-<p>​    django-admin  –version</p>
-<p>在虚拟环境下建立django项目</p>
-<p>​    django-admin   startproject  项目名</p>
-<p>进入django项目</p>
-<p>​    cd  项目名</p>
-<p>启动django服务器</p>
-<p>​    python  manage.py  runserver</p>
-<p>建立应用文件</p>
-<p>​    python  manage.py   startapp  应用文件名</p>
-<p>###2.在linux系统下安装</p>
-<p><code>mkdir  hello_django</code></p>
-<p><code>cd  hello_django</code></p>
-<p>建立虚拟环境venv</p>
-<p><code>python3  -m  venv  venv</code></p>
-<p>激活虚拟环境</p>
-<p><code>source  venv/bin/activate</code></p>
-<p>更新pip</p>
-<p><code>python  -m  pip  install  --upgrade  pip</code></p>
-<p>安装django</p>
-<p>pip  install  django</p>
-<p>创建django项目名hello_django</p>
-<p><code>django-admin  startproject  hello_django .</code></p>
-<h3 id="3-MVT关系模型"><a href="#3-MVT关系模型" class="headerlink" title="3.MVT关系模型"></a>3.MVT关系模型</h3><p>各个模块的交互关系<br>Django收到HTTP请求后，依次完成下列处理：</p>
-<p>根据URL通过URLConf模块映射到View函数，将HttpRequest对象作为参数传入。<br>在View函数中，获取HTTP请求的参数，通过Model访问数据库，进行业务逻辑运算得到输出数据。<br>然后，加载Template，根据输出数据生成页面，将HttpResponse对象返回。</p>
-<p>生成迁移</p>
-<p><code>python  manage.py   makemigrations  应用名</code></p>
-<p>执行迁移</p>
-<p><code>python  manage.py  migrate</code></p>
-<p>创建超级管理员账号</p>
-<p><code>python manage.py  createsuperuser</code></p>
-<p>用户跟踪的三种方式:</p>
-<ul>
-<li>cookie(在请求头里)</li>
-<li>隐藏域(在表单里)</li>
-<li>URL重写(URL里加额外信息向服务器提供身份标识，字节最多为2048)</li>
-</ul>
+<p>netstat -na :查看端口号</p>
+<p>配置防火墙端口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">添加 firewall-cmd --zone=public --add-port=80/tcp --permanent （--permanent永久生效，没有此参数重启后失效） </span><br><span class="line">重新载入 firewall-cmd --reload</span><br><span class="line">查看 firewall-cmd --zone=public --query-port=80/tcp</span><br><span class="line">删除 firewall-cmd --zone=public --remove-port=80/tcp --permanent</span><br></pre></td></tr></table></figure>
+<p>这里有一些常用的命令可以做一些补充<a href="http://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">点击查看</a></p>
 
           
         
@@ -869,7 +742,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -882,7 +755,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
